@@ -5,7 +5,7 @@ import Link from "next/link";
 function Users({ users }) {
     return (
         <ul>
-            {users.map(user => (
+            {users.map((user) => (
                 <Link href={`/users/${user.id}`} key={user.id}>
                     <li className="bg-slate-400 mb-2 p-4 rounded-md text-black flex justify-between">
                         <div>
